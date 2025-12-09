@@ -283,3 +283,12 @@ footer {
   text-align: center;
   margin-top: 50px;
 }
+
+.lazy-img {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+.lazy-img.loaded {
+  filter: blur(0);
+}
