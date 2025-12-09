@@ -99,13 +99,6 @@ items.forEach((item) => {
   item.addEventListener("click", () => {
     const src = item.getAttribute("data-src");
     mainVideo.src = src;
-
-    mainVideo.addEventListener(
-      "loadeddata",
-      () => {
-        mainVideo.play().catch((err) => console.log(err));
-      },
-      { once: true }
-    );
+    // autoplay dimatikan
   });
 });
