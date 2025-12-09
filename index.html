@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kemayoran Pride</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GLightbox CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- Custom Style -->
+    <style></style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold text-uppercase audiowide-regular"
+          href="#"
+          >KMY PRIDE</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#event">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero d-flex">
+      <div class="hero-content text-white">
+        <!-- <h1 id="hero-title" class="display-3 fw-bold">Graffiti Community</h1> -->
+        <div class="p-3 mt-5">
+          <img src="./img/logo-kmy.png" class="hero-logo" alt="" />
+        </div>
+
+        <p class="lead">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro,
+          fugit.
+        </p>
+        <a
+          href="https://www.instagram.com/stillhumblecru_/"
+          class="btn btn-danger mt-3"
+          target="_blank"
+        >
+          <i class="fab fa-instagram me-2"></i> Instagram
+        </a>
+      </div>
+    </section>
+
+    <!-- Team Slider -->
+    <!-- <section id="team" class="py-5 bg-dark text-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4 audiowide-regular">Our Team</h2>
+        <p class="team-names">
+          BIER | JORD | ZARIL | DANS | ZUHRE | ZARKE | PKNG | PAYS | BARZO |
+          NOVRAY | APTIZR | JNZS | KENCY | DEAT | FEBS | HIMEN | PLAY | FRAD |
+          YOSK
+        </p>
+      </div>
+    </section> -->
+
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="fw-bold mb-3 audiowide-regular">About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              illum magnam, eaque dolor impedit excepturi fugiat unde blanditiis
+              molestiae, repudiandae dicta. Error reiciendis non repellat minus
+              sed vel eaque aspernatur, dolorem voluptates optio amet ad, sunt
+              veritatis nulla recusandae totam quia tempora soluta, facere
+              exercitationem magnam molestiae quo. Quidem reprehenderit
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+              quidem excepturi eum voluptatem amet laboriosam blanditiis
+              quisquam harum tempora, aut architecto soluta voluptate unde
+              accusantium, totam quibusdam officiis! Explicabo officia vero modi
+              voluptatum exercitationem magni rem fuga. Ipsa voluptatem
+              exercitationem enim hic. Labore et in minus voluptate dolore
+              officia reprehenderit?
+            </p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <img
+              src="./img/sh.jpg"
+              style="width: 50%"
+              class="img-fluid rounded shadow"
+              alt="About Image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="container py-5">
+      <div class="row g-4">
+        <!-- Video utama -->
+        <div class="col-lg-8">
+          <div class="main-video-wrapper mb-3">
+            <video
+              id="mainVideo"
+              src="./videos/jamming1.mp4"
+              controls
+              autoplay
+              muted
+              class="w-100 video-cover"
+            ></video>
+          </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="col-lg-4">
+          <h5 class="mb-3">Graffiti Jamming Playlist</h5>
+
+          <div class="playlist-list">
+            <!-- Item 1 -->
+
+            <div class="playlist-item" data-src="./videos/jamming1.mp4">
+              <div class="row">
+                <div class="col-5">
+                  <img
+                    src="https://img.youtube.com/vi/JM3sY9Vj6KM/hqdefault.jpg"
+                  />
+                </div>
+                <div class="col-6">
+                  <div>
+                    <h6>Kemayoran Pride Graffiti Jamming #1</h6>
+                    <p class="text-info small mb-0">4:22</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="playlist-item" data-src="./videos/jamming2.mp4">
+              <div class="row">
+                <div class="col-5">
+                  <img
+                    src="https://img.youtube.com/vi/g7EES3Ia2xk/hqdefault.jpg"
+                  />
+                </div>
+                <div class="col-6">
+                  <div>
+                    <h6>Kemayoran Pride Graffiti Jamming #2</h6>
+                    <!-- <p class="text-info small mb-0">4:22</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="playlist-item" data-src="./videos/jamming3.mp4">
+              <div class="row">
+                <div class="col-5">
+                  <img
+                    src="https://img.youtube.com/vi/KoIOBqsN5aA/hqdefault.jpg"
+                  />
+                </div>
+                <div class="col-6">
+                  <div>
+                    <h6>Kemayoran Berkarya Mural & Graffiti Jamming</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="playlist-item" data-src="./videos/krp_kmy.mp4">
+              <div class="row">
+                <div class="col-5">
+                  <img src="./img/krp.png" />
+                </div>
+                <div class="col-6">
+                  <div>
+                    <h6>King Royal Pride Kemayoran</h6>
+                    <!-- <p class="text-info small mb-0">5:10</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event -->
+    <section id="event" class="py-5">
+      <div class="container px-3 px-sm-4">
+        <h2 class="text-center fw-bold mb-4 audiowide-regular">
+          Events & Exhibition
+        </h2>
+        <div class="container">
+          <div class="row g-4 event-row">
+            <div class="col-md-4 col-sm-6">
+              <div class="card bg-dark text-white h-100">
+                <img
+                  src="./img/encore.jpg"
+                  class="card-img-top"
+                  alt="Event 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">ENCORE</h5>
+                  <p class="card-text">
+                    Event Kolaborasi Antar Seniman Dengan Kegiatan Live Painting
+                    | Exhibition | Dj Performance | Live Music.
+                  </p>
+                  <p>Lokasi: Jakbistro Jakarta</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card bg-dark text-white h-100">
+                <img
+                  src="./img/small_room.webp"
+                  class="card-img-top"
+                  alt="Event 1"
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title">SMALL ROOM PRESENT 2025</h5>
+                  <p class="card-text">
+                    Kolaborasi Dengan Street Artist & Album Launching Showcase:
+                    OMPLR – 'Babad Tanah Urban' | Presented by Small Room Soul
+                  </p>
+
+                  <p>Lokasi: Lima Dua Cafe Bar Jakarta</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card bg-dark text-white h-100">
+                <img
+                  src="./img/Art_is_pulse.jpg"
+                  class="card-img-top"
+                  alt="Event 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">
+                    ART IS PULSE OF LIFE DATANG DENGAN VOL.2
+                  </h5>
+                  <p class="card-text">
+                    Event Kolaborasi Antar Seniman Dengan Kegiatan Live Painting
+                    | Workshop | Nail Art | Dj Performance | Live Music.
+                  </p>
+                  <p>Lokasi: Clay Coffee Space Jakarta</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card bg-dark text-white h-100">
+                <img
+                  src="./img/back_on_track.jpg"
+                  class="card-img-top"
+                  alt="Event 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BACK ON TRACK</h5>
+                  <p class="card-text">
+                    Event Pameran Gallery Yang Bertema "Rise Up".
+                  </p>
+
+                  <p>Lokasi: Yoots Store Jakarta</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- KMY JAMMING 1 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card bg-dark text-white h-100">
+                <img
+                  src="./img/kmy_jamming_1.jpg"
+                  class="card-img-top"
+                  alt="Event 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BACK ON TRACK</h5>
+                  <p class="card-text">
+                    Event Pameran Gallery Yang Bertema "Rise Up".
+                  </p>
+
+                  <p>Lokasi: Yoots Store Jakarta</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- LOMBOK -->
+            <div class="col-md-4 col-sm-6">
+              <div class="card bg-dark text-white h-100">
+                <img
+                  src="./img/lombok.jpg"
+                  class="card-img-top"
+                  alt="Event 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BACK ON TRACK</h5>
+                  <p class="card-text">
+                    Event Pameran Gallery Yang Bertema "Rise Up".
+                  </p>
+
+                  <p>Lokasi: Yoots Store Jakarta</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img class="mt-5 footer-event-img" src="./img/Trims.webp" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Project -->
+    <section id="project" class="py-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4 audiowide-regular">Projects</h2>
+        <div class="row g-4">
+          <!-- Project 1 -->
+          <div class="col-md-6">
+            <div class="p-4 bg-black rounded shadow h-100 text-center">
+              <img
+                src="./img/cartago.jpg"
+                alt="Community Mural Project"
+                class="img-fluid rounded mb-3"
+                style="height: 250px; object-fit: cover; width: 100%"
+              />
+              <h4>Community Mural Project</h4>
+              <p>
+                Membuat mural bertema kebersamaan dengan warga setempat untuk
+                memperindah lingkungan kota.
+              </p>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-md-6">
+            <div class="p-4 bg-black rounded shadow h-100 text-center">
+              <img
+                src="./img/Voltasala_mills_jord.jpg"
+                alt="Brand Collaboration"
+                class="img-fluid rounded mb-3"
+                style="height: 250px; object-fit: cover; width: 100%"
+              />
+              <h4>Brand Collaboration</h4>
+              <p>
+                Kolaborasi dengan brand sepatu lokal untuk menciptakan seni
+                visual yang modern dan penuh karakter di ruang publik.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Masonry -->
+    <section id="gallery" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 audiowide-regular">Our Gallery</h2>
+        <div class="masonry">
+          <a href="./img/encore2.webp" class="glightbox">
+            <img src="./img/encore2.webp" alt="Graffiti 1" />
+          </a>
+          <a href="./img/dac1.webp" class="glightbox">
+            <img src="./img/dac1.webp" alt="Graffiti 2" />
+          </a>
+          <a href="./img/encore4.webp" class="glightbox">
+            <img src="./img/encore4.webp" alt="Graffiti 3" />
+          </a>
+          <a href="./img/novray.jpg" class="glightbox">
+            <img src="./img/novray.jpg" alt="Graffiti 4" />
+          </a>
+          <a href="./img/now_kru1.jpg" class="glightbox">
+            <img src="./img/now_kru1.jpg" alt="Graffiti 5" />
+          </a>
+          <a href="./img/encore3.webp" class="glightbox">
+            <img src="./img/encore3.webp" alt="Graffiti 6" />
+          </a>
+          <a href="./img/tow.jpg" class="glightbox">
+            <img src="./img/tow.jpg" alt="Graffiti 7" />
+          </a>
+          <a href="./img/footer.webp" class="glightbox">
+            <img src="./img/footer.webp" alt="Graffiti 8" />
+          </a>
+          <a href="./img/sh.jpg" class="glightbox">
+            <img src="./img/sh.jpg" alt="Graffiti 9" />
+          </a>
+          <a href="./img/oncord.webp" class="glightbox">
+            <img src="./img/oncord.webp" alt="Graffiti 9" />
+          </a>
+          <a href="./img/kmy_bfm.jpg" class="glightbox">
+            <img src="./img/kmy_bfm.jpg" alt="Graffiti 9" />
+          </a>
+          <a href="./img/bird.webp" class="glightbox">
+            <img src="./img/bird.webp" alt="Graffiti 9" />
+          </a>
+          <a href="./img/sketch_jam.webp" class="glightbox">
+            <img src="./img/sketch_jam.webp" alt="Graffiti 9" />
+          </a>
+          <a href="./img/krp.png" class="glightbox">
+            <img src="./img/krp.png" alt="Graffiti 9" />
+          </a>
+          <a href="./img/krp_kmy_lanscape.jpg" class="glightbox">
+            <img src="./img/krp_kmy_lanscape.jpg" alt="Graffiti 9" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4 audiowide-regular">Contact Us</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Masukkan nama anda"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Masukkan email anda"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Tulis pesan anda"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-danger">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 SH Crew - All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
